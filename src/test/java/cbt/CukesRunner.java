@@ -6,6 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        
+        glue = "src/test/java/cbt/StepDefs.java"
         plugin = {
                "json:target/cucumber.json",
                "html:target/cucumber/",
